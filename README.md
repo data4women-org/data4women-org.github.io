@@ -9,6 +9,8 @@ Open `index.html` directly in a browser, or serve this directory with any static
 ## Structure
 
 - `index.html` — homepage
+- `about.html` — organisation profile
+- `approach.html` — working approach
 - `style.css` — site styles
 - `projects/` — individual project pages
 
