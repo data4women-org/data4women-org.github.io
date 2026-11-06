@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Explore women’s representation in the U.S. House by state and party.">
+    <meta name="theme-color" content="#28716e">
+    <title>Women in the U.S. House — Data4Women</title>
+    <link rel="icon" href="assets/data4women_logo.jpeg" type="image/jpeg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <nav class="navbar navbar-expand-lg fixed-top" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img class="brand-logo" src="assets/data4women_logo.jpeg" alt="" width="44" height="44"><span>Data4Women</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Open navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link active" href="data-viz.html">Data Viz</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/company/data4women" target="_blank" rel="noopener noreferrer">Work with us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main id="main-content" class="container viz-gallery">
+      <header class="inner-hero viz-hero">
+        <a class="viz-back" href="data-viz.html">← Back to Data viz gallery</a>
+        <h1>Women in the U.S. House</h1>
+        <p class="lead">Explore the share of House seats won by women in 2026 and how the number of women elected changed since 2024. Use the map and table to compare states and filter by party.</p>
+      </header>
+      <section aria-label="U.S. House dashboard">
+        <iframe class="viz-dashboard" title="Women in the U.S. House interactive dashboard" data-public-url="" hidden></iframe>
+      </section>
+    </main>
+    <script>
+      const dashboard = document.querySelector(".viz-dashboard");
+      const isLocal = ["localhost", "127.0.0.1"].includes(window.location.hostname);
+      const dashboardUrl = isLocal ? "http://127.0.0.1:8501/?embed=true" : dashboard.dataset.publicUrl;
+
+      if (dashboardUrl) {
+        dashboard.src = dashboardUrl;
+        dashboard.hidden = false;
+      }
+    </script>
+    <footer><div class="container"><div class="d-flex flex-column flex-md-row justify-content-between gap-3"><a class="footer-brand" href="index.html">Data4Women</a><p class="mb-0">Gender data for public impact.</p><p class="mb-0">© 2026 Data4Women</p></div></div></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
