@@ -262,6 +262,32 @@ footer { padding: 2rem 0; color: rgba(255,255,255,.6); background: var(--ink); f
 .page-card span { display: block; margin-bottom: 2.5rem; color: var(--violet); font-size: .7rem; font-weight: 800; }
 .page-card h2 { margin-bottom: 1rem; font-size: 1.65rem; letter-spacing: -.035em; }
 .page-card p { margin: 0; color: rgba(16,29,66,.72); line-height: 1.65; }
+
+.viz-hero { padding: 8rem 0 2rem; }
+.viz-hero h1 { margin: 0; font-size: clamp(2.75rem, 6vw, 5rem); }
+.viz-gallery { padding-bottom: 4rem; }
+.viz-back, .viz-back:hover { color: var(--white); }
+.viz-back { display: inline-block; margin-bottom: 1rem; }
+.viz-dashboard { width: 100%; height: clamp(36rem, 85vh, 58rem); border: 0; background: #fff; }
+.viz-dashboard:not([hidden]) { display: block; margin-bottom: 1rem; }
+.viz-card {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  gap: .85rem;
+  padding: 1rem;
+  background: #fff;
+  color: var(--ink);
+  text-decoration: none;
+}
+.viz-card h2 { margin: 0; font-size: 1.3rem; font-weight: 800; }
+.viz-card p { margin: 0; }
+.viz-preview { display: block; width: 100%; height: auto; aspect-ratio: 14 / 9; object-fit: contain; }
+.viz-illustration { background: #f7f4fb; }
+.viz-card-action { margin-top: auto; color: var(--violet-dark); font-weight: 700; }
+.viz-card:hover .viz-card-action, .viz-card:focus-visible .viz-card-action { text-decoration: underline; }
+.viz-card:focus-visible { outline: 3px solid var(--white); outline-offset: 4px; }
+
 .timeline-block { margin-top: 4rem; padding-top: 0; border-top: 0; }
 .timeline-heading { margin-bottom: 3rem; }
 .timeline {
