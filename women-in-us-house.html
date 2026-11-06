@@ -35,17 +35,20 @@
         <p class="lead">Explore the share of House seats won by women in 2026 and how the number of women elected changed since 2024. Use the map and table to compare states and filter by party.</p>
       </header>
       <section aria-label="U.S. House dashboard">
-        <iframe class="viz-dashboard" title="Women in the U.S. House interactive dashboard" data-public-url="" hidden></iframe>
+        <iframe class="viz-dashboard" title="Women in the U.S. House interactive dashboard" data-public-url="https://data4women-elections-usa.streamlit.app/?embed=true" hidden></iframe>
+        <p class="viz-back" id="dashboard-status">The interactive dashboard is currently unavailable.</p>
       </section>
     </main>
     <script>
       const dashboard = document.querySelector(".viz-dashboard");
-      const isLocal = ["localhost", "127.0.0.1"].includes(window.location.hostname);
+      const isLocal = window.location.protocol === "file:" ||
+        ["localhost", "127.0.0.1", "[::1]"].includes(window.location.hostname);
       const dashboardUrl = isLocal ? "http://127.0.0.1:8501/?embed=true" : dashboard.dataset.publicUrl;
 
       if (dashboardUrl) {
         dashboard.src = dashboardUrl;
         dashboard.hidden = false;
+        document.querySelector("#dashboard-status").hidden = true;
       }
     </script>
     <footer><div class="container"><div class="d-flex flex-column flex-md-row justify-content-between gap-3"><a class="footer-brand" href="index.html">Data4Women</a><p class="mb-0">Gender data for public impact.</p><p class="mb-0">© 2026 Data4Women</p></div></div></footer>
