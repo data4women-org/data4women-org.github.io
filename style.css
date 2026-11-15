@@ -381,4 +381,12 @@ footer { padding: 2rem 0; color: var(--pure-white-60); background: var(--ink); f
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
 }
 
-.project-author-logo { display: block; width: 12rem; max-width: 100%; height: auto; }
+/* Offset the transparent inset so the visible logo aligns with metadata values. */
+.project-author-logo {
+  display: block;
+  width: 12rem;
+  max-width: 100%;
+  height: auto;
+  margin-top: -.625rem;
+  margin-left: -.375rem;
+}
