@@ -1,0 +1,38 @@
+/* Single source for site colors. --white is the warm brand white. */
+:root {
+  --ink: #101d42;
+  --paper: #28716e;
+  --white: #f4f1de;
+  --violet: #9569ca;
+  --violet-dark: #352b64;
+  --coral: #cab4e4;
+  --lightgreen: #338f8c;
+  --pure-white: #fff;
+  --violet-pale: #f7f4fb;
+  --shadow-violet: #492871;
+  --lime: var(--paper);
+  --transparent: transparent;
+
+  /* Translucent variants retain the existing appearance. */
+  --line: color-mix(in srgb, var(--ink) 20%, transparent);
+  --pure-white-55: color-mix(in srgb, var(--pure-white) 55%, transparent);
+  --shadow-violet-12: color-mix(in srgb, var(--shadow-violet) 12%, transparent);
+  --ink-24: color-mix(in srgb, var(--ink) 24%, transparent);
+  --paper-18: color-mix(in srgb, var(--paper) 18%, transparent);
+  --violet-30: color-mix(in srgb, var(--violet) 30%, transparent);
+  --ink-46: color-mix(in srgb, var(--ink) 46%, transparent);
+  --ink-85: color-mix(in srgb, var(--ink) 85%, transparent);
+  --pure-white-24: color-mix(in srgb, var(--pure-white) 24%, transparent);
+  --pure-white-35: color-mix(in srgb, var(--pure-white) 35%, transparent);
+  --shadow-violet-14: color-mix(in srgb, var(--shadow-violet) 14%, transparent);
+  --ink-32: color-mix(in srgb, var(--ink) 32%, transparent);
+  --pure-white-65: color-mix(in srgb, var(--pure-white) 65%, transparent);
+  --pure-white-75: color-mix(in srgb, var(--pure-white) 75%, transparent);
+  --pure-white-25: color-mix(in srgb, var(--pure-white) 25%, transparent);
+  --pure-white-70: color-mix(in srgb, var(--pure-white) 70%, transparent);
+  --pure-white-20: color-mix(in srgb, var(--pure-white) 20%, transparent);
+  --ink-72: color-mix(in srgb, var(--ink) 72%, transparent);
+  --pure-white-60: color-mix(in srgb, var(--pure-white) 60%, transparent);
+  --pure-white-45: color-mix(in srgb, var(--pure-white) 45%, transparent);
+  --pure-white-78: color-mix(in srgb, var(--pure-white) 78%, transparent);
+}

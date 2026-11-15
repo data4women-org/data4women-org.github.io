@@ -11,7 +11,9 @@ Open `index.html` directly in a browser, or serve this directory with any static
 - `index.html` — homepage
 - `about.html` — organisation profile
 - `approach.html` — working approach
-- `style.css` — site styles
+- `palette.css` — shared color palette and translucent variants; edit colors here
+- `style.css` — site styles, importing the shared palette
+- `theme-color.js` — applies the palette color to browser theme metadata
 - `projects/` — individual project pages
 
 Bootstrap 5.3 is loaded from the official jsDelivr CDN. No build step is required.
